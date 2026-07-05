@@ -23,7 +23,7 @@ function Dashboard() {
 
   const fetchPermissions = async (token) => {
     try {
-      const res = await axios.get('http://localhost:3000/api/permissions/my-permissions', {
+      const res = await axios.get('https://vaultid-backend.onrender.com/api/permissions/my-permissions', {
         headers: { authorization: token }
       })
       setPermissions(res.data.permissions)

@@ -20,7 +20,7 @@ function Register() {
     setLoading(true)
     setError(null)
     try {
-      const res = await axios.post('http://localhost:3000/api/auth/register', form)
+      const res = await axios.post('https://vaultid-backend.onrender.com/api/auth/register', form)
       setVaultId(res.data.vaultId)
     } catch (err) {
       setError(err.response?.data?.error || 'Something went wrong')
