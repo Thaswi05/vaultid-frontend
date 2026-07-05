@@ -19,7 +19,7 @@ function Dashboard() {
 
     setVaultId(storedVaultId)
     fetchPermissions(token)
-  }, [])
+  }, [navigate])
 
   const fetchPermissions = async (token) => {
     try {
