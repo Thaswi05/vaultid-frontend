@@ -17,7 +17,7 @@ function Login() {
     setLoading(true)
     setError(null)
     try {
-      const res = await axios.post('https://vaultid-backend.onrender.com/api/auth/login', form)
+      const res = await axios.post('https://vaultid-backend.https://vaultid-backend-ffdzbudbf8a2ahcs.centralindia-01.azurewebsites.net/api/auth/login', form)
       localStorage.setItem('token', res.data.token)
       localStorage.setItem('vaultId', res.data.vaultId)
       navigate('/dashboard')
