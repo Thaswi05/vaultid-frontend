@@ -38,7 +38,7 @@ function Dashboard() {
 
   const fetchPermissions = async (token) => {
     try {
-      const res = await axios.get('https://vaultid-backend.https://vaultid-backend-ffdzbudbf8a2ahcs.centralindia-01.azurewebsites.net/api/permissions/my-permissions', {
+      const res = await axios.get('https://vaultid-backend-ffdzbudbf8a2ahcs.centralindia-01.azurewebsites.net/api/permissions/my-permissions', {
         headers: { authorization: token }
       })
       setPermissions(res.data.permissions)
@@ -70,7 +70,7 @@ function Dashboard() {
     setMessage('')
     try {
       await axios.post(
-        'https://vaultid-backend.https://vaultid-backend-ffdzbudbf8a2ahcs.centralindia-01.azurewebsites.net/api/permissions/grant',
+        'https://vaultid-backend-ffdzbudbf8a2ahcs.centralindia-01.azurewebsites.net/api/permissions/grant',
         {
           websiteId: perm.websiteId,
           canSeeName: perm.canSeeName,
@@ -96,7 +96,7 @@ function Dashboard() {
     setMessage('')
     try {
       await axios.post(
-        'https://vaultid-backend.https://vaultid-backend-ffdzbudbf8a2ahcs.centralindia-01.azurewebsites.net/api/permissions/grant',
+        'https://vaultid-backend-ffdzbudbf8a2ahcs.centralindia-01.azurewebsites.net/api/permissions/grant',
         {
           websiteId: perm.websiteId,
           canSeeName: false,
@@ -138,7 +138,7 @@ function Dashboard() {
     setMessage('')
     try {
       await axios.post(
-        'https://vaultid-backend.https://vaultid-backend-ffdzbudbf8a2ahcs.centralindia-01.azurewebsites.net/api/permissions/grant',
+        'https://vaultid-backend-ffdzbudbf8a2ahcs.centralindia-01.azurewebsites.net/api/permissions/grant',
         {
           websiteId: Number(newWebsiteId),
           canSeeName: !!newFields.canSeeName,
